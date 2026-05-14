@@ -42,3 +42,10 @@ class Rectangle:
     def area(self):
         area = (self.upright.x - self.lowleft.x) * (self.upright.y - self.lowleft.y)
         return area
+
+class Circle:
+    def __init__(self, radius, center):
+        self.radius = radius
+        self.center = center
+    def area(self):
+        return np.pi * ((self.radius)**2)
